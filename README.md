@@ -1,69 +1,52 @@
-# Amazon Tag Remover
+<img src="/demo/demo_deffiliate.jpg" width="100%" alt="deffiliate"/>
 
-[![Security](https://github.com/timbru31/amazon-tag-remover/workflows/Security/badge.svg)](https://github.com/timbru31/amazon-tag-remover/actions?query=workflow%3ASecurity)
-[![Linting](https://github.com/timbru31/amazon-tag-remover/workflows/Linting/badge.svg)](https://github.com/timbru31/amazon-tag-remover/actions?query=workflow%3ALinting)
+# deffiliate - Amazon Affiliate-Tag Remover Extension
 
-[![Dependency Status](https://david-dm.org/timbru31/amazon-tag-remover.svg)](https://david-dm.org/timbru31/amazon-tag-remover)
-[![devDependency Status](https://david-dm.org/timbru31/amazon-tag-remover/dev-status.svg)](https://david-dm.org/timbru31/amazon-tag-remover#info=devDependencies)
+deffiliate removes all tags related to the Amazon affiliate program before the page is loaded and therefore prevents the setting of an affiliate cookie. See which tags were removed in the notification and keep on shopping. Easy, lightweight and fast. 
 
-[![Known Vulnerabilities](https://snyk.io/test/github/timbru31/amazon-tag-remover/badge.svg)](https://snyk.io/test/github/timbru31/amazon-tag-remover)
+## 🔥 Features
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/mmajdhfdokfcaiadahjnffhbfjfkmcnc.svg)](https://chrome.google.com/webstore/detail/amazon-tag-remover/mmajdhfdokfcaiadahjnffhbfjfkmcnc)
-[![Opera Add-ons](https://img.shields.io/badge/Opera%20Add--ons-v0.9.0-orange.svg)](https://addons.opera.com/extensions/details/amazon-tag-remover/)
-[![Add-Ons for Firefox](https://img.shields.io/amo/v/amazon-tag-remover.svg)](https://addons.mozilla.org/firefox/addon/amazon-tag-remover/)
-[![Microsoft Edge Addons](https://img.shields.io/badge/Microsoft%20Edge%20Addons-v0.10.2-orange.svg)](https://microsoftedge.microsoft.com/addons/detail/mgomlnlopahnglkdhmneklogokbmhden)
+- [x] auto-removes all affiliate releated tags
+- [x] lightweight and simple
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=timbru31/amazon-tag-remover)](https://dependabot.com)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
+## 📥 Download 
 
-## Info
+### Method 1: Manual installation
 
-Are you tired that each banner or ad linking to amazon is silently injecting their affiliate tracking ID and receive a small revenue of what you bought? And more importantly they know what you bought? (even if it's not directly linked, it's still possible to de-anonymize the data)  
-This extension removes the tracking ID before the browser is performing the request, ensuring that you are not being tracked.
+Download the current release [here](https://github.com/kaibrune/deffiliate/releases/tag/stable). Unpack the .zip and proceed with the installations steps below.
 
-**Note: if you have a partner cookie on your computer, you might still be tracked**
+## 🧑‍💻 Manual Installation
 
-[![Amazon Tag Remover @Chrome Web Store](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/tbyBjqi7Zu733AAKA5n4.png 'Amazon Tag Remover @Chrome Web Store')](https://chrome.google.com/webstore/detail/amazon-tag-remover/mmajdhfdokfcaiadahjnffhbfjfkmcnc)
-[<img alt="Amazon Tag Remover @Opera add-ons" src="https://dev.opera.com/extensions/branding-guidelines/addons_206x58_en@2x.png" height="58" width="206">](https://addons.opera.com/extensions/details/amazon-tag-remover/)
-[<img alt="Amazon Tag Remover @Add-Ons for Firefox" src="https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png" height="58">](https://addons.mozilla.org/firefox/addon/amazon-tag-remover/)
-[<img alt="Amazon Tag Remover @Microsoft Edge Addons" src="docs/edge.png" height="58">](https://microsoftedge.microsoft.com/addons/detail/mgomlnlopahnglkdhmneklogokbmhden)
+To install this chromium extension go to "Window" ➜ "Extension" ➜ toggle "Developer mode" in the right corner ➜ drag and drop the unpacked "deffiliate" folder into the window or choose "Load unpacked" and navigate to the "deffiliate" folder ➜ done!
 
-## Features
+## 🤝 Compatibility
 
--   Visual feedback which tag was removed
--   Works on starting parameter (?tag) and appended parameter (&tag)
--   Support for ascsubtags
--   Full support for all amazon sites (e.g. from Germany, Mexico or UK to China and Italy)
-    -   amazn.to links are supported, too, since the expanded request to the amazon site is intercepted
+This extension works in every Chromium-based browser (Chrome/Brave/Edge/Opera/Vivaldi) with these Amazon Marketplaces:
 
-## Changelog
+- amazon.ae
+- amazon.at
+- amazon.ca
+- amazon.cn
+- amazon.co.jp
+- amazon.co.uk
+- amazon.com.au
+- amazon.com.br
+- amazon.com.mx
+- amazon.com.sg
+- amazon.com.tr
+- amazon.com
+- amazon.de
+- amazon.eg
+- amazon.es
+- amazon.fr
+- amazon.ie
+- amazon.in
+- amazon.it
+- amazon.nl
+- amazon.pl
+- amazon.se
+- amazon.sg
 
-Please visit [CHANGELOG.md](CHANGELOG.md) for a complete changelog.
+## 💌 Feedback & Credits
 
-## Upcoming Features
-
--   Options to whitelist specific tags (charity, friends of you, ...) (#9)
-
-## Contributing
-
-1. Fork and clone the project
-2. Run `npm install`
-3. Run `npm run build:dev` and start hacking. The extension is automatically rebuilt on changes.
-4. Load the un-packaged addon from the `dist` folder
-
-## Support
-
-For support please create an issue here at GitHub
-
-## Donation
-
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif 'Donation via PayPal')](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T9TEV7Q88B9M2)
-
-![BitCoin](https://dustplanet.de/wp-content/uploads/2015/01/bitcoin-logo-plain.png 'Donation via BitCoins')  
-1NnrRgdy7CfiYN63vKHiypSi3MSctCP55C
-
----
-
-Built by (c) Tim Brust and contributors. Released under the MIT license.  
-The `Get it for Microsoft Edge` logo is kindly offered for free by [Julien Muggli](https://gist.github.com/Liozon/cf898c47628bfecd9896f79e6c9a8db8)
+This extension is a fork from Tim's [Amazon Tag Remover](https://github.com/timbru31/amazon-tag-remover). All credits for the main source code belongs to him. I just made some tiny adjustments to suite my and maybe your needs. Feel free to submit a pull-request on this fork or to the original repo. Every feedback is welcomed!
