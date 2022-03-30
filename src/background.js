@@ -67,6 +67,7 @@
     chrome.webNavigation.onCompleted.addListener(
       (o) => {
         n.test(o.url) 
+        if (e.length !== 0){
               chrome.notifications
                   .create("", {
                     iconUrl: "icons/icon64.png",
@@ -75,7 +76,7 @@
                     type: "basic",
                   })
                   e = [];
-      },
+      }},
       { url: [{ urlMatches: o }] }
     );
 })();
